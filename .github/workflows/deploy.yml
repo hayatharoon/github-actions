@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     steps:
-      - name: Message
+      - name: github variable
         run: '${{github}}'
       - name: Message
         run: echo "Deploy complete"
