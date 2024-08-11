@@ -35,4 +35,6 @@ jobs:
     needs: test
     steps:
       - name: Message
+        run: '${{github}}'
+      - name: Message
         run: echo "Deploy complete"
