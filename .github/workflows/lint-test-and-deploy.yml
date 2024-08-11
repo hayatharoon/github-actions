@@ -1,5 +1,7 @@
 name: Lint, test and deploy
+
 on: workflow_dispatch
+
 jobs:
   linting:
     runs-on: ubunto-latest
@@ -8,15 +10,15 @@ jobs:
         run: npm run lint
       - name: message
         run: echo "Linting complete"
-  test:
-    runs-on: ubunto-latest
-    steps:
-      - name: test
-        run: npm run test
-      - name: message
-        run: echo "Linting complete"
-  deploy:
-    runs-on: ubunto-latest
-    steps:
-      - name: message
-        run: echo "Deploy complete"
+  # test:
+  #   runs-on: ubunto-latest
+  #   steps:
+  #     - name: test
+  #       run: npm run test
+  #     - name: message
+  #       run: echo "Linting complete"
+  # deploy:
+  #   runs-on: ubunto-latest
+  #   steps:
+  #     - name: message
+  #       run: echo "Deploy complete"
